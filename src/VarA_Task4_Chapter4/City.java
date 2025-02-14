@@ -5,14 +5,14 @@ public class City {
     private boolean isCapital;
     private boolean isRegionalCenter;
 
-    // Конструктор
+
     public City(String name, boolean isCapital, boolean isRegionalCenter) {
         this.name = name;
         this.isCapital = isCapital;
         this.isRegionalCenter = isRegionalCenter;
     }
 
-    // Геттеры
+
     public String getName() {
         return name;
     }

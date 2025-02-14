@@ -8,19 +8,18 @@ public class Region {
     private City regionalCenter;
     private List<District> districts;
 
-    // Конструктор
+
     public Region(String name, City regionalCenter) {
         this.name = name;
         this.regionalCenter = regionalCenter;
         this.districts = new ArrayList<>();
     }
 
-    // Добавление района в область
+
     public void addDistrict(District district) {
         districts.add(district);
     }
 
-    // Геттеры
     public String getName() {
         return name;
     }
@@ -33,7 +32,7 @@ public class Region {
         return districts;
     }
 
-    // Переопределение методов
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

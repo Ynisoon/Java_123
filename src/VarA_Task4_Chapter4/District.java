@@ -13,12 +13,12 @@ public class District {
         this.cities = new ArrayList<>();
     }
 
-    // Добавление города в район
+
     public void addCity(City city) {
         cities.add(city);
     }
 
-    // Геттеры
+
     public String getName() {
         return name;
     }
@@ -27,7 +27,7 @@ public class District {
         return cities;
     }
 
-    // Переопределение методов
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

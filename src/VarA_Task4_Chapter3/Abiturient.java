@@ -9,7 +9,7 @@ public class Abiturient {
     private String phone;
     private int[] grades;
 
-    // Конструкторы
+
     public Abiturient() {
     }
 
@@ -23,7 +23,6 @@ public class Abiturient {
         this.grades = grades;
     }
 
-    // Геттеры и сеттеры
     public int getId() {
         return id;
     }
@@ -89,7 +88,7 @@ public class Abiturient {
         return sum;
     }
 
-    // Метод для проверки наличия неудовлетворительных оценок
+    // наличие неудовлетворительных оценок
     public boolean hasUnsatisfactoryGrades() {
         for (int grade : grades) {
             if (grade < 3) { // Предположим, что оценка ниже 3 — неудовлетворительная
@@ -99,7 +98,6 @@ public class Abiturient {
         return false;
     }
 
-    // Переопределение метода toString
     @Override
     public String toString() {
         return "Abiturient{" +

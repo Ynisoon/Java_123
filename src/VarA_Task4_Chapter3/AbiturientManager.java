@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class AbiturientManager {
     private Abiturient[] abiturients;
 
-    // Конструктор
+
     public AbiturientManager(Abiturient[] abiturients) {
         this.abiturients = abiturients;
     }
 
-    // Метод для вывода абитуриентов с неудовлетворительными оценками
+    // Вывода абитуриентов с неуд оценками
     public void printAbiturientsWithUnsatisfactoryGrades() {
         printTableHeader();
         for (Abiturient abiturient : abiturients) {
@@ -20,7 +20,7 @@ public class AbiturientManager {
         }
     }
 
-    // Метод для вывода абитуриентов с суммой баллов выше заданной
+    //вывод абитуриентов с суммой баллов выше заданной
     public void printAbiturientsWithSumAbove(int threshold) {
         printTableHeader();
         for (Abiturient abiturient : abiturients) {
@@ -30,7 +30,7 @@ public class AbiturientManager {
         }
     }
 
-    // Метод для выбора n абитуриентов с самой высокой суммой баллов
+    //выбор n абитуриентов с самой высокой суммой баллов
     public void printTopNAbiturients(int n) {
         // Сортируем абитуриентов по сумме баллов в порядке убывания
         Arrays.sort(abiturients, (a1, a2) -> Integer.compare(a2.getSumOfGrades(), a1.getSumOfGrades()));
