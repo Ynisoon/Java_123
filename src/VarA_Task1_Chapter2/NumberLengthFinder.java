@@ -1,4 +1,4 @@
-package VarA_Task1_Chapter1;
+package VarA_Task1_Chapter2;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
